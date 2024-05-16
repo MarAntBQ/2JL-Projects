@@ -1,0 +1,373 @@
+@mixin boton-icono-config2 {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+
+    i {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.5s;
+    }
+}
+
+.ficha-deportista {
+    margin: 30px 10px;
+
+    .barra-opciones {
+        margin-bottom: 15px;
+        position: sticky;
+        top: 0;
+        background-color: rgba(8, 15, 72, 0.57);
+
+        .titulo {
+            text-align: center;
+            background: green;
+            color: white;
+            font-size: 30px;
+            min-height: 50px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-right: 5px;
+            //padding: 5px 5px;
+
+        }
+
+        .botonera-opciones {
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+        .btns {
+            .icono {
+                @include boton-icono-config2;
+                border-radius: 5px;
+                transition: 0.5s;
+                cursor: pointer;
+                margin: 0px 10px;
+
+                &:hover {
+                    //background: #4b1893;
+
+                    i {
+                        //transform: scale(1.1);
+                    }
+                }
+
+                i {
+                    color: white;
+
+                }
+            }
+        }
+
+        .btn-imprimir {
+            .icono {
+                background: #0098E4;
+
+                &:hover {
+                    background: #0279b4;
+                }
+            }
+        }
+
+        .btn-regresar {
+            a {
+                display: block;
+                text-decoration: none;
+                width: 75px;
+                min-width: 75px;
+                margin: 0px 10px 0px 0px;
+            }
+
+            .icono {
+                background: #FFCA14;
+                margin: 0px 10px 0px 0px;
+                width: 75px;
+                min-width: 75px;
+
+                i {
+                    margin-top: 8px;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    transition: 0.5s;
+                }
+
+                &:hover {
+                    background: #cea311;
+
+                    i {
+                        transform: translateX(-10px);
+                    }
+
+                    p {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .datos-jugador {
+        .sub-container {
+            width: 100%;
+            padding: 15px 0px;
+        }
+
+        .foto-display {
+            padding: 15px 5px;
+            background: #696969;
+            color: white;
+
+            .img-position-container {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .img-contenedor {
+                //height: 125px;
+                //overflow-y: hidden;
+                //padding: 15px 0px;
+                margin: 15px 0px;
+                //border-radius: 5px;
+                transition: 0.5s all;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                //transform: translateY(-15px);
+                //margin: 15px 0px;
+                border: 1px solid rgba(59, 59, 59, 0.53);
+                border-radius: 10px;
+            }
+
+            .nombre {
+                font-size: 25px;
+                width: 85%;
+                line-height: 1.5em;
+                margin: 0px auto;
+                font-weight: bold;
+            }
+
+            .cedula {
+                font-size: 20px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .datos-info {
+            .fila-informativa {
+                border-bottom: 1px solid white;
+
+                .izquierda {
+                    font-weight: bold;
+                    border-right: 1px solid white;
+                    padding: 10px 5px;
+                    text-align: right;
+                    //color: #6E6E6E;
+                }
+
+                .derecha {
+                    border-left: 1px solid white;
+                    padding: 10px 5px;
+                }
+
+                &:nth-of-type(odd) {
+                    background: #E0E0E0;
+                }
+
+                &:nth-of-type(even) {
+                    background: #CCCCCC;
+                }
+            }
+        }
+
+        .linea-divisora {
+            height: 5px;
+            background: white;
+        }
+    }
+
+    .historial-deportivo {
+        .titulo {
+            background: #019DA9;
+            font-size: 30px;
+            color: white;
+            padding: 10px 25px;
+            position: sticky;
+            top: 0;
+            font-weight: bold;
+        }
+
+        .linea-divisora {
+            height: 5px;
+            background: white;
+        }
+
+        /* Tabla */
+        .contenedor-tabla2 {
+            //background: rgba(255, 255, 255, 0.3);
+            //padding: 30px 0px 0px 0px;
+
+            text-align: center;
+            box-sizing: border-box;
+            //margin: 30px 20px 30px 20px;
+            overflow-x: hidden;
+            //border-radius: 5px;
+
+            //color: white;
+            //Aqui esta el div del contenedor tabla del html listo para ser modificado
+            /* Code for Table */
+
+            table {
+
+                box-sizing: border-box;
+                //background: yellow;
+                //display: block;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+
+                td,
+                th {
+                    min-width: 120px;
+                }
+
+                th {
+                    background: #9D9D9C;
+                    color: #FFFFFF;
+                    padding: 10px 5px;
+                    border: 1px solid #757474;
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 10px 5px;
+                            border: 1px solid #757474;
+
+                            /*a {
+                        color: #6AA26E;
+                        transition: 0.5s;
+                        text-decoration-color: #5A5A59;
+
+                        &:hover {
+                            color: #4e7951;
+                        }
+                    }*/
+                        }
+
+                        &:nth-of-type(odd) {
+                            background: #FFFFFF;
+
+                            td {
+                                transition: 0.5s;
+                            }
+
+                            &:hover {
+                                td {
+                                    background: #c6c5c5;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(even) {
+                            background: #ededed;
+
+                            td {
+                                transition: 0.5s;
+                            }
+
+                            &:hover {
+                                td {
+                                    background: #afabab;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .ficha-deportista .historial-deportivo .contenedor-tabla2 {
+        overflow-x: scroll;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .ficha-deportista .barra-opciones {
+        .botonera-opciones {
+            justify-content: center;
+            position: fixed;
+            bottom: 15px;
+            background: rgba(74, 73, 73, 0.24);
+            right: 15px;
+            width: 165px;
+            border-radius: 15px;
+
+            .btns {
+                .icono {
+                    margin: 10px;
+                    width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .btn-regresar {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    width: 75px;
+                    min-width: 75px;
+                    //margin: 10px;
+                }
+
+                .icono {
+                    margin: 10px 10px 10px 0px;
+                    width: 75px;
+                    min-width: 75px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ficha-deportista .datos-jugador .datos-info .fila-informativa .izquierda {
+        border-right: 0px;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    }
+
+    .ficha-deportista .datos-jugador .datos-info .fila-informativa .derecha {
+        border-left: 0px;
+    }
+
+    .ficha-deportista .historial-deportivo .titulo {
+        text-align: center;
+    }
+}

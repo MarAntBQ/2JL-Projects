@@ -1,0 +1,1 @@
+sass --watch malla.scss ../css/malla.css

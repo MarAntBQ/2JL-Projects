@@ -1,0 +1,90 @@
+/* Pie de Pagina - Footer */
+
+footer {
+    //border-top: 2px solid rgba(255, 255, 255, 0.58);
+    //background: black;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+    padding: 30px 10px;
+    //font-size: 1px;
+
+    .copyright {
+        //background: rgba(255, 255, 255, 0.01);
+        border-radius: 3px;
+        padding: 15px 0px;
+        i {
+            //font-size: 25px;
+            color: rgba(0, 219, 95, 0.75);
+            animation: 3s girarpelota infinite linear;
+        }
+
+        .link-img {
+            display: block;
+            width: 200px;
+            margin: auto;
+            
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+
+            img {
+                display: block;
+                width: 200px;
+                margin: auto;
+                transition: 0.5s;
+                //filter: drop-shadow(8px 8px 10px #808080);
+            }
+        }
+
+
+
+        a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.15s;
+
+            &:hover {
+                color: #dddddd;
+            }
+        }
+    }
+}
+
+@keyframes girarpelota {
+    /*10%{
+        color: rgba(255, 0, 0, 0.2);
+    }
+    20%{
+        color: rgba(255, 0, 0, 0.4);
+    }
+    30%{
+        color: rgba(255, 0, 0, 0.6);
+    }
+    40%{
+        color: rgba(255, 0, 0, 0.8);
+    }*/
+    50%{
+        
+        color: rgb(0, 219, 95);
+    }
+    /*60%{
+        color: rgba(255, 0, 0, 0.8);
+    }
+    70%{
+        color: rgba(255, 0, 0, 0.6);
+    }
+    80%{
+        color: rgba(255, 0, 0, 0.4);
+    }
+    90%{
+        color: rgba(255, 0, 0, 0.2);
+    }*/
+    100% {
+        color: rgba(0, 219, 95, 0.75);
+        transform: rotate(360deg);
+    }
+}

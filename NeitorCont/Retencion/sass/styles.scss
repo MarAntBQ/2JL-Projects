@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 950px;
+    min-width: 950px;
+    width: 950px;
+    padding: 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.encabezado-retencion {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    max-width: 100%;
+
+    td {
+        //border: 1px solid green;
+    }
+}
+
+.logo-container {
+    text-align: center;
+
+    img {
+        max-width: 400px;
+        width: 90%;
+        //margin-top: 5px;
+    }
+}
+
+.datos-fiscales {
+    min-width: 475px;
+    max-width: 475px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    //margin-top: 25px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    h1 {
+        text-transform: uppercase;
+        color: #1B497D;
+        text-align: center;
+        margin: 5px 0px;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+    .num-auto {
+        max-width: 450px;
+    }
+
+    .date {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .clave-de-acceso {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .clave-imagen {
+        img {
+            //min-width: 400px;
+            max-width: 475px;
+            width: 100%;
+        }
+    }
+}
+
+.informacion-emisor {
+     min-width: 450px;
+    max-width: 450px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    h3 {
+        text-transform: uppercase;
+        color: #1B497D;
+        text-align: center;
+        margin: 5px 0px;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+}
+
+.datos-cliente {
+    //width: 100%;
+    //min-width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    //max-width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    min-width: 800px;
+    margin: 5px;
+    p {
+        margin: 10px 0px;
+    }
+}
+
+.cuerpo {
+    width: 100%;
+    min-width: 750px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    max-width: 940px;
+    font-size: 13px;
+    margin: 5px;
+    td, th {
+        padding: 5px;
+        text-align: center;
+        border: 2px solid black;
+    }
+    th {
+        background: #F2F2F2;
+    }
+}
+
+.informacion-adicional {
+    border: 2px solid black;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: -25px;
+    box-sizing: border-box;
+    .titulo {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    p {
+        margin: 10px 0px;
+    }
+}
+
+hr {
+    margin: 25px 0px 10px 0px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+}

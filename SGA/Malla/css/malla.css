@@ -1,0 +1,118 @@
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 300px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+.malla-container {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.malla-container * {
+  box-sizing: border-box;
+}
+.malla-container .filas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.malla-container .left,
+.malla-container .right {
+  margin: 10px 0px;
+}
+.malla-container .left {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .malla-container .left {
+    width: 100%;
+  }
+}
+.malla-container .left p {
+  font-weight: bold;
+  width: 100%;
+}
+.malla-container .center-botones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: center;
+}
+.malla-container .center-botones i {
+  display: block;
+  font-size: 30px;
+  background: #51C1E1;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.1s;
+  color: white;
+}
+.malla-container .center-botones i:hover {
+  transform: scale(1.01);
+  background: #49adca;
+  cursor: pointer;
+}
+@media (max-width: 757px) {
+  .malla-container .center-botones {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .malla-container .center-botones .sub-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .malla-container .center-botones .sub-contenedor i {
+    max-width: 50px;
+  }
+  .malla-container .center-botones .sub-contenedor i:nth-child(1) {
+    transform: rotate(90deg);
+  }
+  .malla-container .center-botones .sub-contenedor i:nth-child(2) {
+    transform: rotate(90deg);
+  }
+}
+.malla-container select {
+  width: 200px;
+  padding: 5px;
+}
+.malla-container .sub-filas {
+  border: 1px solid #D6D6D6;
+  min-width: 270px;
+  /*margin-left: 5px;
+  margin-right: 5px;*/
+  border-radius: 5px;
+  min-height: 200px;
+}
+.malla-container .sub-filas:nth-child(2) {
+  margin-left: 0px;
+}
+@media (max-width: 757px) {
+  .malla-container .sub-filas {
+    min-width: 100%;
+  }
+}
+.malla-container .sub-filas p {
+  padding: 5px;
+  transition: 0.1s all;
+  border-bottom: 1px solid #D6D6D6;
+}
+.malla-container .sub-filas p:first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+.malla-container .sub-filas p:hover {
+  background: #51C1E1;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=malla.css.map */

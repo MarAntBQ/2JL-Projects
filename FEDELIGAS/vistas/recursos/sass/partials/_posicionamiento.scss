@@ -1,0 +1,272 @@
+// Parcial de Posicionamiento
+$ancho-pantalla: 95%;
+
+// Plantilla de Sistema de Rejilla
+$total-columnas: 16;
+$calculo: $ancho-pantalla / $total-columnas;
+
+//Contenedores de los segmentos
+
+@mixin configuracion-flex {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-h-s-b {
+    @include configuracion-flex;
+    justify-content: space-between;
+}
+
+.flex-h-s-a {
+    @include configuracion-flex;
+    justify-content: space-around;
+}
+
+.flex-h-c {
+    @include configuracion-flex;
+    justify-content: center;
+}
+
+.flex-h-f-s {
+    @include configuracion-flex;
+    justify-content: flex-start;
+}
+
+.flex-h-f-e {
+    @include configuracion-flex;
+    justify-content: flex-end;
+}
+
+
+.flex-v-c {
+    @include configuracion-flex;
+    align-items: center;
+}
+
+.flex-v-s-a {
+    @include configuracion-flex;
+    align-content: space-around;
+}
+
+.flex-v-s-b {
+    @include configuracion-flex;
+    align-content: space-between;
+}
+
+
+.flex-v-f-s {
+    @include configuracion-flex;
+    align-items: flex-start;
+}
+
+.flex-v-f-e {
+    @include configuracion-flex;
+    align-items: flex-end;
+}
+
+@mixin segmento-config {
+    box-sizing: border-box;
+}
+
+
+@for $i from 1 through $total-columnas {
+    .segmento-lg#{$i} {
+        @include segmento-config;
+        width: $calculo * $i;
+    }
+}
+
+@media (max-width: 950px) {
+
+    @for $i from 1 through $total-columnas {
+        .segmento-lm#{$i} {
+            @include segmento-config;
+            width: $calculo * $i;
+        }
+    }
+
+    .flex-lm-h-s-b {
+        @include configuracion-flex;
+        justify-content: space-between;
+    }
+
+    .flex-lm-h-s-a {
+        @include configuracion-flex;
+        justify-content: space-around;
+    }
+
+    .flex-lm-h-c {
+        @include configuracion-flex;
+        justify-content: center;
+    }
+
+    .flex-lm-h-f-s {
+        @include configuracion-flex;
+        justify-content: flex-start;
+    }
+
+    .flex-lm-h-f-e {
+        @include configuracion-flex;
+        justify-content: flex-end;
+    }
+
+
+    .flex-lm-v-c {
+        @include configuracion-flex;
+        align-items: center;
+    }
+
+    .flex-lm-v-s-a {
+        @include configuracion-flex;
+        align-content: space-around;
+    }
+
+    .flex-lm-v-s-b {
+        @include configuracion-flex;
+        align-content: space-between;
+    }
+
+
+    .flex-lm-v-f-s {
+        @include configuracion-flex;
+        align-items: flex-start;
+    }
+
+    .flex-lm-v-f-e {
+        @include configuracion-flex;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+
+    @for $i from 1 through $total-columnas {
+        .segmento-md#{$i} {
+            @include segmento-config;
+            width: $calculo * $i;
+        }
+    }
+
+    .flex-md-h-s-b {
+        @include configuracion-flex;
+        justify-content: space-between;
+    }
+
+    .flex-md-h-s-a {
+        @include configuracion-flex;
+        justify-content: space-around;
+    }
+
+    .flex-md-h-c {
+        @include configuracion-flex;
+        justify-content: center;
+    }
+
+    .flex-md-h-f-s {
+        @include configuracion-flex;
+        justify-content: flex-start;
+    }
+
+    .flex-md-h-f-e {
+        @include configuracion-flex;
+        justify-content: flex-end;
+    }
+
+
+    .flex-md-v-c {
+        @include configuracion-flex;
+        align-items: center;
+    }
+
+    .flex-md-v-s-a {
+        @include configuracion-flex;
+        align-content: space-around;
+    }
+
+    .flex-md-v-s-b {
+        @include configuracion-flex;
+        align-content: space-between;
+    }
+
+
+    .flex-md-v-f-s {
+        @include configuracion-flex;
+        align-items: flex-start;
+    }
+
+    .flex-md-v-f-e {
+        @include configuracion-flex;
+        align-items: flex-end;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    @for $i from 1 through $total-columnas {
+        .segmento-sm#{$i} {
+            @include segmento-config;
+            width: $calculo * $i;
+        }
+    }
+        .flex-sm-h-s-b {
+        @include configuracion-flex;
+        justify-content: space-between;
+    }
+
+    .flex-sm-h-s-a {
+        @include configuracion-flex;
+        justify-content: space-around;
+    }
+
+    .flex-sm-h-c {
+        @include configuracion-flex;
+        justify-content: center;
+    }
+
+    .flex-sm-h-f-s {
+        @include configuracion-flex;
+        justify-content: flex-start;
+    }
+
+    .flex-sm-h-f-e {
+        @include configuracion-flex;
+        justify-content: flex-end;
+    }
+
+
+    .flex-sm-v-c {
+        @include configuracion-flex;
+        align-items: center;
+    }
+
+    .flex-sm-v-s-a {
+        @include configuracion-flex;
+        align-content: space-around;
+    }
+
+    .flex-sm-v-s-b {
+        @include configuracion-flex;
+        align-content: space-between;
+    }
+
+
+    .flex-sm-v-f-s {
+        @include configuracion-flex;
+        align-items: flex-start;
+    }
+
+    .flex-sm-v-f-e {
+        @include configuracion-flex;
+        align-items: flex-end;
+    }
+
+}
+
+
+
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}

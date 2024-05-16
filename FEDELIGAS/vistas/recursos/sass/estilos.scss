@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Scroll Bar Codes */
+::-webkit-scrollbar {
+  width: 10px;
+    height: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.9);
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0098E4;
+border-radius: 3px;
+  background-image: -webkit-linear-gradient(90deg, transparent, #0098E4 50%, transparent, transparent);
+}
+
+body {
+    min-width: 300px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fondo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translatex(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+
+@import 'partials/botones';
+//@import 'partials/bucles';
+@import 'partials/posicionamiento';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/tabla';
+@import 'partials/404';
+@import 'partials/ficha';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');

@@ -1,0 +1,139 @@
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 300px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+.malla-container {
+    padding: 10px;
+    box-sizing: border-box;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .filas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left,
+    .right {
+        margin: 10px 0px;
+        //padding: 5px;
+    }
+
+    .left {
+        min-width: 120px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        p {
+            font-weight: bold;
+            width: 100%;
+        }
+    }
+
+    .center-botones {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-content: center;
+
+        
+
+        i {
+            display: block;
+            font-size: 30px;
+            background: #51C1E1;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 3px;
+            transition: 0.1s;
+            color: white;
+
+            &:hover {
+                transform: scale(1.01);
+                background: #49adca;
+                cursor: pointer;
+            }
+        }
+        @media (max-width: 757px) {
+            width: 100%;
+            flex-wrap: nowrap;
+
+            .sub-contenedor {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                i {
+                    max-width: 50px;
+                    &:nth-child(1) {
+                        transform: rotate(90deg);
+                    }
+                    &:nth-child(2) {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+
+    select {
+        width: 200px;
+        padding: 5px;
+    }
+
+    .sub-filas {
+        border: 1px solid #D6D6D6;
+        min-width: 270px;
+        /*margin-left: 5px;
+        margin-right: 5px;*/
+        border-radius: 5px;
+        min-height: 200px;
+
+        &:nth-child(2) {
+            margin-left: 0px;
+        }
+
+        @media (max-width: 757px) {
+            min-width: 100%;
+
+            &:nth-child(3) {
+                //margin-left: 0px;
+            }
+        }
+
+        p {
+            padding: 5px;
+            transition: 0.1s all;
+            border-bottom: 1px solid #D6D6D6;
+
+            &:first-child {
+                border-radius: 5px 5px 0px 0px;
+            }
+
+            &:last-child {
+                //border-bottom: 0px solid #D6D6D6;  
+            }
+
+            &:hover {
+                background: #51C1E1;
+                cursor: pointer;
+            }
+        }
+    }
+}

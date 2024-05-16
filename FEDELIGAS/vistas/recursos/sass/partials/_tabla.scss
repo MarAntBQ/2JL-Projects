@@ -1,0 +1,156 @@
+/* Tabla */
+.contenedor-tabla1 {
+    //background: rgba(255, 255, 255, 0.3);
+    //padding: 30px 0px 0px 0px;
+
+    text-align: center;
+    box-sizing: border-box;
+    margin: 30px 20px 30px 20px;
+    overflow-x: hidden;
+    border-radius: 5px;
+
+    //color: white;
+    //Aqui esta el div del contenedor tabla del html listo para ser modificado
+    /* Code for Table */
+
+    table {
+
+        box-sizing: border-box;
+        //background: yellow;
+        //display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+
+        td,
+        th {
+            min-width: 120px;
+        }
+
+        th {
+            background: #9D9D9C;
+            color: #FFFFFF;
+            padding: 10px 5px;
+            border: 1px solid #757474;
+        }
+
+        thead tr th:nth-child(1) {
+            //background: green;
+            max-width: 50px;
+            min-width: 50px;
+            box-sizing: border-box;
+        }
+
+        thead tr th:nth-child(2) {
+            //background: green;
+            max-width: 80px;
+            min-width: 80px;
+            box-sizing: border-box;
+        }
+
+        tbody tr td:nth-child(1) {
+            //background: green;
+            max-width: 50px;
+            min-width: 50px;
+            box-sizing: border-box;
+        }
+
+        tbody tr td:nth-child(2) {
+            //background: green;
+            max-width: 80px;
+            min-width: 80px;
+            box-sizing: border-box;
+
+            img {
+                display: block;
+                width: 50px;
+                height: 50px;
+                //overflow-y: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                transition: 0.5s;
+                border: 1px solid #757474;
+                border-radius: 3px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: drop-shadow(8px 8px 10px #808080);
+                }
+            }
+        }
+
+        tbody tr td:last-child {
+            a {
+                color: #0098E4;
+                transition: 0.5s;
+                //text-decoration-color: #5A5A59;
+                font-size: 30px;
+                i {
+                   transition: 0.5s; 
+                }
+
+                &:hover {
+                    color: #0279b4;
+                    i {
+                        transform:rotate(5deg);
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 10px 5px;
+                    border: 1px solid #757474;
+
+                    /*a {
+                        color: #6AA26E;
+                        transition: 0.5s;
+                        text-decoration-color: #5A5A59;
+
+                        &:hover {
+                            color: #4e7951;
+                        }
+                    }*/
+                }
+
+                &:nth-of-type(odd) {
+                    background: #FFFFFF;
+
+                    td {
+                        transition: 0.5s;
+                    }
+
+                    &:hover {
+                        td {
+                            background: #c6c5c5;
+                        }
+                    }
+                }
+
+                &:nth-of-type(even) {
+                    background: #ededed;
+
+                    td {
+                        transition: 0.5s;
+                    }
+
+                    &:hover {
+                        td {
+                            background: #afabab;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1105px) {
+    .contenedor-tabla1 {
+        overflow-x: scroll;
+    }
+}

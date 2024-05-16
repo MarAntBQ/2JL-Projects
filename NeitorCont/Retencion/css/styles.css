@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 950px;
+  min-width: 950px;
+  width: 950px;
+  padding: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.encabezado-retencion {
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+.logo-container {
+  text-align: center;
+}
+.logo-container img {
+  max-width: 400px;
+  width: 90%;
+}
+
+.datos-fiscales {
+  min-width: 475px;
+  max-width: 475px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.datos-fiscales h1 {
+  text-transform: uppercase;
+  color: #1B497D;
+  text-align: center;
+  margin: 5px 0px;
+}
+.datos-fiscales p {
+  margin: 10px 0px;
+}
+.datos-fiscales .num-auto {
+  max-width: 450px;
+}
+.datos-fiscales .date {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.datos-fiscales .clave-de-acceso {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.datos-fiscales .clave-imagen img {
+  max-width: 475px;
+  width: 100%;
+}
+
+.informacion-emisor {
+  min-width: 450px;
+  max-width: 450px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.informacion-emisor h3 {
+  text-transform: uppercase;
+  color: #1B497D;
+  text-align: center;
+  margin: 5px 0px;
+}
+.informacion-emisor p {
+  margin: 10px 0px;
+}
+
+.datos-cliente {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  padding: 10px;
+  border: 2px solid black;
+  min-width: 800px;
+  margin: 5px;
+}
+.datos-cliente p {
+  margin: 10px 0px;
+}
+
+.cuerpo {
+  width: 100%;
+  min-width: 750px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  max-width: 940px;
+  font-size: 13px;
+  margin: 5px;
+}
+.cuerpo td, .cuerpo th {
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+}
+.cuerpo th {
+  background: #F2F2F2;
+}
+
+.informacion-adicional {
+  border: 2px solid black;
+  max-width: 500px;
+  padding: 10px;
+  margin: 5px;
+  margin-top: -25px;
+  box-sizing: border-box;
+}
+.informacion-adicional .titulo {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.informacion-adicional p {
+  margin: 10px 0px;
+}
+
+hr {
+  margin: 25px 0px 10px 0px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

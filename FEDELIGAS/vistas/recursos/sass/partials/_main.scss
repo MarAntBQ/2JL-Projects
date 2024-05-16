@@ -1,0 +1,181 @@
+/* Main - Parte Principal o Cuerpo de Pagina*/
+@mixin boton-icono-config {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+
+    i {
+        text-align: center;
+        font-size: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.5s;
+    }
+}
+
+menu-principal {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+    background-color: rgba(8, 15, 72, 0.75);
+    padding: 10px 10px;
+    //font-size: 20px;
+    transition: 1s all;
+    //border-top: 2px solid rgba(255, 255, 255, 0.41);
+    //border-bottom: 2px solid rgba(255, 255, 255, 0.46);
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        line-height: 2em;
+        font-weight: bold;
+        width: 100%;
+        color: white;
+    }
+
+    //border-bottom: 5px solid rgba(0, 0, 0, 0.05);
+    //border-left: 3px solid rgba(0, 0, 0, 0.31);
+    //border-right: 3px solid rgba(0, 0, 0, 0.31);
+    //border-radius: 0px 0px 25px 25px;
+    .contenedor-select {
+        width: 100%;
+
+        select {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 3px 0px 0px 3px;
+            padding: 0px 15px;
+            border: 0px solid #F2F2F2;
+            background: #F2F2F2;
+            transition: 0.5s all;
+        }
+    }
+
+    .contenedor-input {
+        //padding: 3px;
+        display: flex;
+        width: 100%;
+
+        .icono {
+            @include boton-icono-config;
+            background: #0098E4;
+            border-radius: 0px 3px 3px 0px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                background: #0279b4;
+
+                i {
+                    transform: scale(1.1) rotate(-15deg);
+                }
+            }
+
+            i {
+                color: white;
+
+            }
+        }
+
+        input {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 3px 0px 0px 3px;
+            padding: 0px 15px;
+            border: 0px solid #F2F2F2;
+            background: #F2F2F2;
+            transition: 0.5s all;
+        }
+    }
+
+    .botonera-opciones {
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    .btns {
+        .icono {
+            @include boton-icono-config;
+            border-radius: 5px;
+            transition: 0.5s;
+            cursor: pointer;
+            margin: 15px 10px 0px 10px;
+
+            &:hover {
+                //background: #4b1893;
+
+                i {
+                    //transform: scale(1.1);
+                }
+            }
+
+            i {
+                color: white;
+
+            }
+        }
+    }
+
+    .btn-imprimir {
+        .icono {
+            background: #0098E4;
+
+            &:hover {
+                background: #0279b4;
+            }
+        }
+    }
+
+    .btn-recargar {
+        .icono {
+            background: #FFCA14;
+
+            &:hover {
+                background: #cea311;
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    menu-principal {
+        .botonera-opciones {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    menu-principal {
+        .botonera-opciones {
+            position: fixed;
+            bottom: 15px;
+            background: rgba(74, 73, 73, 0.24);
+            right: 15px;
+            width: 150px;
+            border-radius: 15px;
+
+            .btns {
+                .icono {
+                    margin: 10px;
+                    width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+

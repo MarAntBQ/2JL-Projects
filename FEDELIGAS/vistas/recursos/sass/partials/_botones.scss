@@ -1,0 +1,66 @@
+// Parcial de Botones
+
+@mixin boton-configuracion {
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    padding: 7px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s all;
+    width: 130px;
+    min-width: 130px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.btn-center {
+    color: white;
+    @include boton-configuracion;
+    background: #51C1E1;
+    border-color: #51C1E1;
+    &:hover {
+        background: #29ABE2;
+        border-color: #29ABE2;
+    }
+}
+
+.btn-guardar {
+    color: white;
+    @include boton-configuracion;
+    margin: 20px 5% 0px 5%;
+    background: #0071B8;
+    border-color: #0071B8;
+    &:hover {
+        background: #114798;
+        border-color: #114798;
+    }
+}
+
+.btn-cancelar {
+    color: white;
+    @include boton-configuracion;
+    margin: 20px 5% 0px 5%;
+    background: #878787;
+    border-color: #878787;
+    &:hover {
+        background: #575756;
+        border-color: #575756;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-guardar, .btn-cancelar, .btn-center {
+        width: 70%;
+        padding: 10px 5px;
+        font-size: 1.1em;
+        
+    }
+}
+
+
+

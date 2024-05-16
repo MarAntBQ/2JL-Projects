@@ -1,0 +1,225 @@
+// Parcial de Bucles a fin de generar clases generales para controlar directamente en el HTML los aspectos importantes
+$maximo: 500;
+$maximo-otros: 150;
+
+//-------------Widths-----------------------------//
+
+
+/* Widths en Pixeles */
+/* Formula de Aplicación .w__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo {
+    .w#{$i}px {
+        width: 0px + $i;
+    }
+}
+
+/* Widths en Porcentajes */
+/* Formula de Aplicación .w__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .w#{$i}p {
+        width: 0% + $i;
+    }
+}
+
+/* Max-Widths en Pixeles */
+/* Formula de Aplicación .maxw__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo {
+    .maxw#{$i}px {
+        max-width: 0px + $i;
+    }
+}
+
+/* Max-Widths en Porcentajes */
+/* Formula de Aplicación .maxw__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .maxw#{$i}p {
+        max-width: 0% + $i;
+    }
+}
+
+//-------------Heights----------------------//
+
+
+/* Heights en Pixeles */
+/* Formula de Aplicación .h__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo {
+    .h#{$i}px {
+        height: 0px + $i;
+    }
+}
+
+/* Heights en Porcentajes */
+/* Formula de Aplicación .h__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .h#{$i}p {
+        height: 0% + $i;
+    }
+}
+
+/* Max-Heights en Pixeles */
+/* Formula de Aplicación .maxh__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo {
+    .maxh#{$i}px {
+        max-height: 0px + $i;
+    }
+}
+
+/* Max-Heights en Porcentajes */
+/* Formula de Aplicación .maxh__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .maxh#{$i}p {
+        max-height: 0% + $i;
+    }
+}
+
+//-------------Margenes----------------------//
+
+
+/* Margenes Generales en Pixeles */
+/* Formula de Aplicación .m__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo-otros {
+    .m#{$i}px {
+        margin: 0px + $i;
+    }
+}
+
+/* Margen Automatico */
+.mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Margenes Posición en Pixeles */
+/* Formula de Aplicación .m"t/b/l/r <- significa la posicion"__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo-otros {
+    .mt#{$i}px {
+        margin-top: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .mb#{$i}px {
+        margin-bottom: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .ml#{$i}px {
+        margin-left: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .mr#{$i}px {
+        margin-right: 0px + $i;
+    }
+}
+
+
+
+/* Margenes Generales en Porcentajes */
+/* Formula de Aplicación .m__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .m#{$i}p {
+        margin: 0% + $i;
+    }
+}
+
+/* Margenes Posición en Porcentajes */
+/* Formula de Aplicación .m"t/b/l/r <- significa la posicion"__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100% */
+@for $i from 1 through 100 {
+    .mt#{$i}p {
+        margin-top: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .mb#{$i}p {
+        margin-bottom: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .ml#{$i}p {
+        margin-left: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .mr#{$i}p {
+        margin-right: 0% + $i;
+    }
+}
+
+//-------------Paddings----------------------//
+
+
+/* Paddings Generales en Pixeles */
+/* Formula de Aplicación .p__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo-otros {
+    .p#{$i}px {
+        padding: 0px + $i;
+    }
+}
+
+/* Paddings Posición en Pixeles */
+/* Formula de Aplicación .m"t/b/l/r <- significa la posicion"__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta la variable $maximo */
+@for $i from 1 through $maximo-otros {
+    .pt#{$i}px {
+        padding-top: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .pb#{$i}px {
+        padding-bottom: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .pl#{$i}px {
+        padding-left: 0px + $i;
+    }
+}
+
+@for $i from 1 through $maximo-otros {
+    .pr#{$i}px {
+        padding-right: 0px + $i;
+    }
+}
+
+
+
+/* Paddings Generales en Porcentajes */
+/* Formula de Aplicación .m__px <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100 porciento */
+@for $i from 1 through 100 {
+    .p#{$i}p {
+        padding: 0% + $i;
+    }
+}
+
+/* Paddings Posición en Porcentajes */
+/* Formula de Aplicación .m"t/b/l/r <- significa la posicion"__p <- donde estan las dos lineas se pone el numero hasta el maximo que hay generado hasta el 100% */
+@for $i from 1 through 100 {
+    .pt#{$i}p {
+        padding-top: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .pb#{$i}p {
+        padding-bottom: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .pl#{$i}p {
+        padding-left: 0% + $i;
+    }
+}
+
+@for $i from 1 through 100 {
+    .pr#{$i}p {
+        padding-right: 0% + $i;
+    }
+}
