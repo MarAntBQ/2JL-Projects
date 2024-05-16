@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    max-width: 940px;
+    min-width: 940px;
+    padding: 10px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-reporte-inscripcion {
+    max-width: 500px;
+    width: 45%;
+    display: block;
+    margin: 5px auto;
+}
+
+.sign-field {
+    text-align: center;
+    padding: 55px 4px 10px 4px;
+
+    span {
+        width: 50%;
+        height: 1.5px;
+        background: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.linea-abajo {
+    td {
+        border-bottom: 2px solid black;
+    }
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    thead {
+        background: #D6D6D6;
+        border: 2px solid black;
+        //margin-bottom: 5px;
+
+        tr {
+            th {
+                padding: 10px 0px;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                border: 1px solid black;
+                //width: 25%;
+                padding: 4px;
+                &:first-child {
+                    border-left: 2px solid black;
+                }
+                &:last-child {
+                    border-right: 2px solid black;
+                }
+            }
+        }
+    }
+}

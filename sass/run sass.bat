@@ -1,0 +1,1 @@
+sass --watch inscripcionespdf.scss ../css/inscripcionespdf.css
